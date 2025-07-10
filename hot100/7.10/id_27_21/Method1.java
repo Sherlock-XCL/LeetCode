@@ -7,7 +7,7 @@ class ListNode {
     ListNode(int val) { this.val = val; }
     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
-
+// 使用List存链表
 public class Method1 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         List<Integer> ans = new ArrayList<>();
