@@ -16,7 +16,7 @@ public class Method1 {
         while (cur != null) {
             cnt ++;
             if (cnt % 2 == 0) {
-                // 先删数组最后的元素
+                // 先删数组最后的元素 ---
                 a.remove(a.size() - 1);
                 a.add(cur.val);
                 a.add(pre.val);        
