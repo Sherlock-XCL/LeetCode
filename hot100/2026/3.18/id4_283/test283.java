@@ -12,6 +12,7 @@ public class test283 {
         for (int num : nums) {
             System.out.print(num + " ");
         }
+        sc.close();
     }
     private static void moveZeroes(int[] nums) {
         int l = 0, r = 0;
