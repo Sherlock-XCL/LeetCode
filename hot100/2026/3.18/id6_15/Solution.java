@@ -28,9 +28,9 @@ class Solution {
                 if (x + nums[i] < 0) { // 不够大 j右移
                     j ++;
                     while (j < k && nums[j] == nums[j - 1]) j ++;
-                } else if (x + nums[i] < 0) {
+                } else if (x + nums[i] > 0) {
                     k --;
-                    while (j < k && nums[k] == nums[k - 1]) k --;
+                    while (j < k && nums[k] == nums[k + 1]) k --;
                 } else {
                     tmp.add(nums[i]);
                     tmp.add(nums[j]);
@@ -38,7 +38,7 @@ class Solution {
                     j ++;
                     k --;
                     while (j < k && nums[j] == nums[j - 1]) j ++;
-                    while (j < k && nums[k] == nums[k - 1]) k --;
+                    while (j < k && nums[k] == nums[k + 1]) k --;
                 }
                 ans.add(tmp);
             }
